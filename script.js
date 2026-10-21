@@ -11,7 +11,7 @@ themeBtn.addEventListener('click', () => {
   themeBtn.textContent = light ? 'Dark mode' : 'Light mode';
   try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
 });
-
+ 
 // Skills: add icons, show a line about the selected skill
 const skills = document.querySelectorAll('.skill');
 const info = document.getElementById('skill-info');
@@ -29,7 +29,7 @@ skills.forEach((btn) => {
     info.textContent = '> ' + btn.textContent.trim() + ': ' + btn.dataset.info;
   });
 });
-
+ 
 // Contact form: validate, then open the visitor's email app with the message filled in
 const form = document.getElementById('form');
 const status = document.getElementById('status');
@@ -46,3 +46,4 @@ form.addEventListener('submit', (e) => {
     encodeURIComponent('Portfolio message from ' + name) +
     '&body=' + encodeURIComponent(msg + '\n\n' + name + ' (' + email + ')');
 });
+ 

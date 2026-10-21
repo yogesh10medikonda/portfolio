@@ -19,31 +19,35 @@
 </header>
 <main>
 <section id="top" class="hero">
-<div>
+<div class="intro">
 <p class="pill">Hello, I’m</p>
 <h1>Medikonda <span class="grad">Yogesh Reddy</span></h1>
-<h2>Aspiring Software Engineer</h2>
-<p>I build full-stack web applications and explore cloud technologies, with a focus on scalable, secure and efficient software.</p>
+<h2 class="role">Aspiring Software Engineer</h2>
+<p>I build full-stack web apps and explore cloud technologies.</p>
 <p class="cta"><a class="btn primary" href="#projects">View my projects</a><a class="btn" href="#contact">Contact me</a></p>
 </div>
+<div class="side">
 <div class="photo">
-<img class="me" src="profile.jpeg" alt="Medikonda Yogesh Reddy" width="320" height="320">
+<div class="ring"><img class="me" src="profile.jpg" alt="Medikonda Yogesh Reddy" width="320" height="320"></div>
 <img class="chip c1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
 <img class="chip c2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
 <img class="chip c3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
 <img class="chip c4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
 </div>
+<div class="term">
+<div class="bar"><i></i><i></i><i></i><span>Frontend + Backend + Cloud</span></div>
+<pre><code><span class="l"><b class="k">const</b> <b class="p">profile</b> = {</span><span class="l">  name: <b class="s">"Yogesh"</b>,</span><span class="l">  role: <b class="s">"Aspiring Software Engineer"</b>,</span><span class="l">  focus: [<b class="s">"Full-stack"</b>, <b class="s">"Backend"</b>, <b class="s">"Cloud"</b>],</span><span class="l">  learning: <b class="s">"AWS Cloud Practitioner"</b>,</span><span class="l">};</span></code></pre>
+</div>
+</div>
 </section>
 
 <section id="about">
-<h2>About</h2>
-<p>Third-year B.Tech student in Computer and Communication Engineering at Amrita Vishwa Vidyapeetham. I build full-stack web applications and explore cloud technologies, focusing on scalable, secure, and efficient software solutions.</p>
-<p><strong>Career goal:</strong> to become a Software Engineer specializing in full-stack development, backend systems, and cloud computing by building reliable and scalable applications.</p>
+<h2 class="sh">About</h2>
+<p>Third-year B.Tech student in Computer and Communication Engineering at Amrita Vishwa Vidyapeetham. I want to become a software engineer in full-stack, backend and cloud, building reliable and scalable applications.</p>
 </section>
 
 <section id="skills">
-<div>
-<h2>Skills</h2>
+<h2 class="sh">Skills</h2>
 <div class="skill-grid">
 <button class="skill" data-icon="python" data-info="Programming, automation and application development">Python</button>
 <button class="skill" data-icon="c" data-info="Programming fundamentals and data structures">C</button>
@@ -59,47 +63,42 @@
 <button class="skill" data-icon="linux" data-info="Docker, deployment workflows and cloud application hosting">Cloud &amp; DevOps</button>
 <button class="skill" data-info="Data visualization and dashboards">Power BI</button>
 </div>
-</div>
-<div class="term">
-<div class="bar"><i></i><i></i><i></i><span>Frontend + Backend + Cloud</span></div>
-<pre><code><span class="l"><b class="k">const</b> <b class="p">profile</b> = {</span><span class="l">  name: <b class="s">"Yogesh"</b>,</span><span class="l">  role: <b class="s">"Aspiring Software Engineer"</b>,</span><span class="l">  focus: [<b class="s">"Full-stack"</b>, <b class="s">"Backend"</b>, <b class="s">"Cloud"</b>],</span><span class="l">  learning: <b class="s">"AWS Cloud Practitioner"</b>,</span><span class="l">};</span><span class="l"></span><span class="l">console.log(<b class="p">profile</b>.role);</span></code></pre>
 <p id="skill-info">&gt; Select a skill to see how I use it.</p>
-</div>
 </section>
 
 <section id="projects">
-<h2>Projects</h2>
+<h2 class="sh">Projects</h2>
 <div class="cards">
 <article class="card"><h3>Job Application Tracker</h3>
-<p>Cloud-based job application tracker with smart job matching, analytics, reminders and CI/CD. Includes a separate analyzer service and a Docker Compose setup.</p>
+<p>Cloud-based tracker with smart job matching, analytics, reminders and CI/CD, using Docker Compose.</p>
 <p class="links"><a href="https://job-tracker-16eh.vercel.app" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/yogesh10medikonda/job-tracker" target="_blank" rel="noopener">GitHub</a></p></article>
 <article class="card"><h3>Event Scheduler REST API</h3>
-<p>Flask REST API for event scheduling with full CRUD, search, IST timezone support and a background reminder service that flags events starting within the hour. Includes a Bootstrap dashboard and a Postman collection.</p>
+<p>Flask API with CRUD, search, IST timezone support and a background reminder service. Includes a Bootstrap dashboard.</p>
 <p class="links"><a href="https://github.com/yogesh10medikonda/event-scheduler-api" target="_blank" rel="noopener">GitHub</a></p></article>
-<article class="card"><h3>Cloud-Based URL Shortener &amp; Analytics</h3>
-<p>Full-stack URL shortener with authentication, link expiry and click analytics, built with React, Node.js, Express and MongoDB. Includes Docker configuration, cloud deployment and backend integration.</p>
+<article class="card"><h3>URL Shortener &amp; Analytics</h3>
+<p>Full-stack app with authentication, link expiry and click analytics. React, Node.js, Express, MongoDB, Docker.</p>
 <p class="links"><a href="https://yogesh10medikonda-url-shortener.onrender.com" target="_blank" rel="noopener">Live demo</a><a href="https://yogesh-url-shortener-api.onrender.com" target="_blank" rel="noopener">API</a><a href="https://github.com/yogesh10medikonda/Cloud-Based-URL-Shortener-Analytics" target="_blank" rel="noopener">GitHub</a></p></article>
-<article class="card"><h3>YOURS Web Application</h3>
-<p>Full-stack web application built with React and Firebase, with user authentication, database integration and cloud-based workflows. Deployed on Firebase Hosting.</p>
+<article class="card"><h3>YOURS Web App</h3>
+<p>React and Firebase app with authentication and database integration, hosted on Firebase.</p>
 <p class="links"><a href="https://yours-a4b4f.web.app" target="_blank" rel="noopener">Live demo</a></p></article>
 <article class="card"><h3>ResQMesh</h3>
-<p>Emergency communication app built with Python, Kivy and SQLite for SOS message sharing, with offline-first design. Published on GitHub with source code, documentation and an APK release.</p></article>
+<p>Offline-first emergency SOS app built with Python, Kivy and SQLite. APK released on GitHub.</p></article>
 <article class="card"><h3>Focus Learn</h3>
-<p>Student productivity platform that improves study focus, with separate dashboards for students, lecturers and parents.</p></article>
+<p>Student productivity platform with separate dashboards for students, lecturers and parents.</p></article>
 </div>
 </section>
 
 <section id="certifications">
-<h2>Certifications</h2>
+<h2 class="sh">Certifications</h2>
 <div class="cards">
 <article class="card"><h3>Cloud Computing Fundamentals</h3><p>IBM SkillsBuild</p><span class="tag">Completed</span></article>
 <article class="card"><h3>freeCodeCamp</h3><p>JavaScript Algorithms and Data Structures; Responsive Web Design</p><span class="tag">Completed</span></article>
-<article class="card"><h3>AWS Cloud Practitioner</h3><p>Cloud concepts, security, pricing and core AWS services.</p><span class="tag">In progress</span></article>
+<article class="card"><h3>AWS Cloud Practitioner</h3><p>Cloud concepts, security and core AWS services.</p><span class="tag">In progress</span></article>
 </div>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+<h2 class="sh">Contact</h2>
 <p class="reach"><a href="mailto:yogeshmedikonda10@gmail.com">yogeshmedikonda10@gmail.com</a> | <a href="tel:+919398802182">+91 93988 02182</a></p>
 <form id="form" novalidate>
 <label for="fname">Name</label><input id="fname" type="text" autocomplete="name">
