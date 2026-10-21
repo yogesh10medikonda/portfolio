@@ -1,339 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#020817">
-  <meta name="description" content="Medikonda Yogesh Reddy — Software Engineer portfolio showcasing full-stack development, backend systems, cloud computing, projects, and certifications.">
-
-  <title>Yogesh Reddy | Software Engineer Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E%3C/%3E%3C/svg%3E">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medikonda Yogesh Reddy | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <a class="logo" href="#home">&lt;/&gt; Yogesh<span>.</span></a>
+<header>
+<a class="logo" href="#top">Yogesh<span>.</span></a>
+<nav aria-label="Main">
+<a href="#top">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+<button id="theme" type="button">Light mode</button>
+</nav>
+</header>
+<main>
+<section id="top" class="hero">
+<div>
+<p class="pill">Hello, I’m</p>
+<h1>Medikonda <span class="grad">Yogesh Reddy</span></h1>
+<h2>Aspiring Software Engineer</h2>
+<p>I build full-stack web applications and explore cloud technologies, with a focus on scalable, secure and efficient software.</p>
+<p class="cta"><a class="btn primary" href="#projects">View my projects</a><a class="btn" href="#contact">Contact me</a></p>
+</div>
+<div class="photo">
+<img class="me" src="profile.jpg" alt="Medikonda Yogesh Reddy" width="320" height="320">
+<img class="chip c1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+<img class="chip c2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+<img class="chip c3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+<img class="chip c4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+</div>
+</section>
 
-    <button id="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false">
-      ☰ Menu
-    </button>
+<section id="about">
+<h2>About</h2>
+<p>Third-year B.Tech student in Computer and Communication Engineering at Amrita Vishwa Vidyapeetham. I build full-stack web applications and explore cloud technologies, focusing on scalable, secure, and efficient software solutions.</p>
+<p><strong>Career goal:</strong> to become a Software Engineer specializing in full-stack development, backend systems, and cloud computing by building reliable and scalable applications.</p>
+</section>
 
-    <nav id="nav-links" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-      <button id="theme" type="button">☀️ Light mode</button>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div>
-        <span class="pill">Computer & Communication Engineering</span>
-
-        <p>Hello, I'm</p>
-
-        <h1>Medikonda <span class="grad">Yogesh Reddy</span></h1>
-
-        <h2>Aspiring Software Engineer</h2>
-
-        <p>
-          I build full-stack web applications and explore cloud technologies,
-          with a focus on scalable, secure, and efficient software.
-        </p>
-
-        <div class="cta">
-          <a class="btn primary" href="#projects">View My Projects →</a>
-          <a class="btn" href="#contact">✉ Contact Me</a>
-        </div>
-
-        <div class="social" aria-label="Social links">
-          <a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/yogesh-reddy-medikonda-941231441/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn ↗</a>
-          <a href="mailto:yogeshmedikonda10@gmail.com">Email ↗</a>
-        </div>
-
-        <div class="links" aria-label="Key technologies">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Python</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Cloud</span>
-        </div>
-      </div>
-
-      <div class="photo">
-        <!-- Add your own image as profile.jpg in the portfolio folder. -->
-        <img
-          class="me"
-          src="profile.jpg"
-          alt="Portrait of Yogesh Reddy"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
-        >
-        <div class="me profile-placeholder" aria-label="Yogesh profile placeholder">
-          <span>&lt;/&gt;</span>
-          <strong>Yogesh</strong>
-          <small>Software Engineer</small>
-        </div>
-        <div class="chip c1" aria-hidden="true">⚛️</div>
-        <div class="chip c2" aria-hidden="true">☁️</div>
-        <div class="chip c3" aria-hidden="true">🐍</div>
-        <div class="chip c4" aria-hidden="true">💻</div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me <span class="grad">.</span></h2>
-
-      <div class="card">
-        <p>
-          I'm a third-year B.Tech student in Computer and Communication
-          Engineering at Amrita Vishwa Vidyapeetham. I enjoy developing
-          full-stack applications, solving programming problems, and learning
-          backend and cloud technologies.
-        </p>
-
-        <h3>🎯 Career Goal</h3>
-        <p>
-          To become a Software Engineer specializing in full-stack development,
-          backend systems, and cloud computing by building reliable and
-          scalable applications.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <div>
-        <h2>Technical Skills <span class="grad">.</span></h2>
-        <p class="reach">
-          Technologies I use and continue to learn through coursework
-          and projects.
-        </p>
-
-        <div class="skill-grid">
-          <button class="skill" type="button" data-name="Python" data-info="Used for scripting, backend experiments, and the FastAPI analyzer in my Job Tracker project.">Python</button>
-          <button class="skill" type="button" data-name="C" data-info="Building programming fundamentals and problem-solving skills.">C</button>
-          <button class="skill" type="button" data-name="Java" data-info="Developing object-oriented programming fundamentals.">Java</button>
-          <button class="skill" type="button" data-name="HTML" data-info="Structuring accessible web pages and portfolio sections.">HTML</button>
-          <button class="skill" type="button" data-name="CSS" data-info="Creating responsive layouts, themes, and interactive visual designs.">CSS</button>
-          <button class="skill" type="button" data-name="JavaScript" data-info="Adding interactivity and building web application features.">JavaScript</button>
-          <button class="skill" type="button" data-name="SQL" data-info="Learning relational data modelling and database queries.">SQL</button>
-          <button class="skill" type="button" data-name="React" data-info="Building component-based interfaces for web projects.">React</button>
-          <button class="skill" type="button" data-name="Node.js" data-info="Building server-side JavaScript applications and REST APIs.">Node.js</button>
-          <button class="skill" type="button" data-name="MongoDB" data-info="Working with document-based data in web applications.">MongoDB</button>
-          <button class="skill" type="button" data-name="Docker" data-info="Learning containerization and deployment workflows.">Docker</button>
-          <button class="skill" type="button" data-name="Cloud Computing" data-info="Studying cloud concepts, deployment, and cloud architecture.">Cloud</button>
-          <button class="skill" type="button" data-name="Power BI" data-info="Exploring data visualization and reporting.">Power BI</button>
-        </div>
-
-        <p id="skill-info" aria-live="polite">
-          Select a skill to see how I use it.
-        </p>
-      </div>
-
-      <div>
-        <h2>Developer Snapshot <span class="grad">.</span></h2>
-
-        <div class="term">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
-          <pre><code>const developer = {
-  name: "Yogesh Reddy",
-  role: "Software Engineer",
+<section id="skills">
+<div>
+<h2>Skills</h2>
+<div class="skill-grid">
+<button class="skill" data-icon="python" data-info="Programming, automation and application development">Python</button>
+<button class="skill" data-icon="c" data-info="Programming fundamentals and data structures">C</button>
+<button class="skill" data-icon="java" data-info="Object-oriented programming and backend concepts">Java</button>
+<button class="skill" data-icon="html5" data-info="Creating webpage structures">HTML</button>
+<button class="skill" data-icon="css3" data-info="Responsive design, styling and animations">CSS</button>
+<button class="skill" data-icon="javascript" data-info="Interactive web applications">JavaScript</button>
+<button class="skill" data-icon="mysql" data-info="Database queries and management">SQL</button>
+<button class="skill" data-icon="react" data-info="Building modern frontend applications">React</button>
+<button class="skill" data-icon="nodejs" data-info="Backend APIs using Express and Node.js">Node.js</button>
+<button class="skill" data-icon="mongodb" data-info="Database management and cloud database usage">MongoDB</button>
+<button class="skill" data-icon="docker" data-info="Containerization and application deployment">Docker</button>
+<button class="skill" data-icon="linux" data-info="Docker, deployment workflows and cloud application hosting">Cloud &amp; DevOps</button>
+<button class="skill" data-info="Data visualization and dashboards">Power BI</button>
+</div>
+</div>
+<div class="term">
+<div class="bar"><i></i><i></i><i></i></div>
+<pre><code>const profile = {
+  name: "Yogesh",
+  role: "Aspiring Software Engineer",
   focus: ["Full-stack", "Backend", "Cloud"],
-  learning: ["AWS", "System Design"],
-  mindset: "Build and improve"
-};
+  learning: "AWS Cloud Practitioner",
+};</code></pre>
+<p id="skill-info">&gt; Select a skill to see how I use it.</p>
+</div>
+</section>
 
-console.log("Always learning.");</code></pre>
-        </div>
-      </div>
-    </section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="cards">
+<article class="card"><h3>Job Application Tracker</h3>
+<p>Cloud-based job application tracker with smart job matching, analytics, reminders and CI/CD. Includes a separate analyzer service and a Docker Compose setup.</p>
+<p class="links"><a href="https://job-tracker-16eh.vercel.app" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/yogesh10medikonda/job-tracker" target="_blank" rel="noopener">GitHub</a></p></article>
+<article class="card"><h3>Event Scheduler REST API</h3>
+<p>Flask REST API for event scheduling with full CRUD, search, IST timezone support and a background reminder service that flags events starting within the hour. Includes a Bootstrap dashboard and a Postman collection.</p>
+<p class="links"><a href="https://github.com/yogesh10medikonda/event-scheduler-api" target="_blank" rel="noopener">GitHub</a></p></article>
+<article class="card"><h3>Cloud-Based URL Shortener &amp; Analytics</h3>
+<p>Full-stack URL shortener with authentication, link expiry and click analytics, built with React, Node.js, Express and MongoDB. Includes Docker configuration, cloud deployment and backend integration.</p>
+<p class="links"><a href="https://yogesh10medikonda-url-shortener.onrender.com" target="_blank" rel="noopener">Live demo</a><a href="https://yogesh-url-shortener-api.onrender.com" target="_blank" rel="noopener">API</a><a href="https://github.com/yogesh10medikonda/Cloud-Based-URL-Shortener-Analytics" target="_blank" rel="noopener">GitHub</a></p></article>
+<article class="card"><h3>YOURS Web Application</h3>
+<p>Full-stack web application built with React and Firebase, with user authentication, database integration and cloud-based workflows. Deployed on Firebase Hosting.</p>
+<p class="links"><a href="https://yours-a4b4f.web.app" target="_blank" rel="noopener">Live demo</a></p></article>
+<article class="card"><h3>ResQMesh</h3>
+<p>Emergency communication app built with Python, Kivy and SQLite for SOS message sharing, with offline-first design. Published on GitHub with source code, documentation and an APK release.</p></article>
+<article class="card"><h3>Focus Learn</h3>
+<p>Student productivity platform that improves study focus, with separate dashboards for students, lecturers and parents.</p></article>
+</div>
+</section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Featured Projects <span class="grad">.</span></h2>
-      <p class="reach">Practical projects that demonstrate my development journey.</p>
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="cards">
+<article class="card"><h3>Cloud Computing Fundamentals</h3><p>IBM SkillsBuild</p><span class="tag">Completed</span></article>
+<article class="card"><h3>freeCodeCamp</h3><p>JavaScript Algorithms and Data Structures; Responsive Web Design</p><span class="tag">Completed</span></article>
+<article class="card"><h3>AWS Cloud Practitioner</h3><p>Cloud concepts, security, pricing and core AWS services.</p><span class="tag">In progress</span></article>
+</div>
+</section>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Job Application Tracker</h3>
-          <p>
-            A job-search management application planned with application
-            tracking, analytics, reminders, and resume skill matching.
-          </p>
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">FastAPI</span>
-          <div class="links">
-            <a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </article>
+<section id="contact">
+<h2>Contact</h2>
+<p class="reach"><a href="mailto:yogeshmedikonda10@gmail.com">yogeshmedikonda10@gmail.com</a> | <a href="tel:+919398802182">+91 93988 02182</a></p>
+<form id="form" novalidate>
+<label for="fname">Name</label><input id="fname" type="text" autocomplete="name">
+<label for="femail">Email</label><input id="femail" type="email" autocomplete="email">
+<label for="fmsg">Message</label><textarea id="fmsg" rows="4"></textarea>
+<button type="submit" class="btn primary">Send message</button>
+<p id="status" role="status"></p>
+</form>
+</section>
+</main>
 
-        <article class="card">
-          <h3>Event Scheduler REST API</h3>
-          <p>
-            An event scheduling API concept featuring CRUD operations,
-            event search, and timezone-aware reminder workflows.
-          </p>
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">REST API</span>
-          <div class="links">
-            <a href="https://github.com/yogesh10medikonda/event-scheduler-api" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Cloud-Based URL Shortener</h3>
-          <p>
-            A URL shortening application with authentication, link expiry,
-            analytics, and a deployed web interface.
-          </p>
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Express</span>
-          <span class="tag">MongoDB</span>
-          <div class="links">
-            <a href="https://yogesh10medikonda-url-shortener.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
-            <a href="https://github.com/yogesh10medikonda/Cloud-Based-URL-Shortener-Analytics" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>YOURS Web Application</h3>
-          <p>
-            A React and Firebase application exploring user authentication
-            and cloud-connected app functionality.
-          </p>
-          <span class="tag">React</span>
-          <span class="tag">Firebase</span>
-          <div class="links">
-            <a href="https://yours-a4b4f.web.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
-            <a href="https://github.com/yogesh10medikonda/-yours-app-" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>ResQMesh</h3>
-          <p>
-            An emergency communication prototype using Python, Kivy,
-            and SQLite to explore offline SOS message sharing.
-          </p>
-          <span class="tag">Python</span>
-          <span class="tag">Kivy</span>
-          <span class="tag">SQLite</span>
-          <div class="links">
-            <a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Focus Learn</h3>
-          <p>
-            A student productivity platform concept for organizing
-            learning activities and progress.
-          </p>
-          <span class="tag">Web Development</span>
-          <span class="tag">Productivity</span>
-          <div class="links">
-            <a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications">
-      <h2>Certifications <span class="grad">.</span></h2>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Cloud Computing Fundamentals</h3>
-          <p>IBM SkillsBuild</p>
-          <span class="tag">Completed</span>
-        </article>
-
-        <article class="card">
-          <h3>JavaScript Algorithms and Data Structures</h3>
-          <p>freeCodeCamp</p>
-          <span class="tag">Completed</span>
-          <div class="links">
-            <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>AWS Cloud Practitioner</h3>
-          <p>Learning cloud concepts, security, pricing, and core AWS services.</p>
-          <span class="tag">In Progress</span>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Get In Touch <span class="grad">.</span></h2>
-      <p class="reach">
-        Have an opportunity, internship, or project idea? Feel free to reach out.
-      </p>
-
-      <div class="card">
-        <p><strong>Email:</strong>
-          <a href="mailto:yogeshmedikonda10@gmail.com">yogeshmedikonda10@gmail.com</a>
-        </p>
-
-        <p><strong>Phone:</strong>
-          <a href="tel:+919398802182">+91 93988 02182</a>
-        </p>
-
-        <p><strong>GitHub:</strong>
-          <a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener noreferrer">yogesh10medikonda ↗</a>
-        </p>
-
-        <p><strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/yogesh-reddy-medikonda-941231441/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a>
-        </p>
-
-        <form id="form">
-          <label for="fname">Your Name</label>
-          <input id="fname" name="name" type="text" placeholder="Enter your name" autocomplete="name" required minlength="2">
-
-          <label for="femail">Your Email</label>
-          <input id="femail" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
-
-          <label for="fmsg">Message</label>
-          <textarea id="fmsg" name="message" placeholder="Write your message..." required minlength="5"></textarea>
-
-          <button class="btn primary" type="submit">Send Message →</button>
-          <p id="status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year">2026</span> Medikonda Yogesh Reddy</p>
-    <p>Built with HTML, CSS, and JavaScript.</p>
-    <p class="social">
-      <a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/yogesh-reddy-medikonda-941231441/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="mailto:yogeshmedikonda10@gmail.com">Email</a>
-    </p>
-  </footer>
+<footer>
+<p>&copy; 2026 Medikonda Yogesh Reddy</p>
+<p class="social"><a href="https://github.com/yogesh10medikonda" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/yogesh-reddy-medikonda-941231441/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:yogeshmedikonda10@gmail.com">Email</a></p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
